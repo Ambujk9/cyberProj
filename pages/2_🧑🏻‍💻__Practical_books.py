@@ -31,10 +31,9 @@ with st.container():
             Penetration testers simulate cyber attacks to find security weaknesses in networks, operating systems, and applications. ...
             """
             )
-        link = st.button('*Click here...*', key = "1")
-        if link:
-            webbrowser.open('https://drive.google.com/file/d/1TSEsVeUGG8g9j5j3zqTjd3A1HJ4Qa_at/view?usp=share_link')
-            
+        link = 'https://drive.google.com/file/d/1TSEsVeUGG8g9j5j3zqTjd3A1HJ4Qa_at/view?usp=share_link'
+        st.write(f'<a href="{link}" target="_blank">Click here...</a>', unsafe_allow_html=True)
+        
 with st.container():
     st.write("###")
     image_column, text_column = st.columns((1, 4))
